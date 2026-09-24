@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Pages to Read",
+    title: "Listed Books",
 };
 
-export default function PagesToReadPage() {
+export default function ListedBooksPage() {
     return (
         <section className="py-10">
-            <h1 className="text-3xl font-bold">Pages to Read</h1>
+            <h1 className="text-3xl font-bold">Listed Books</h1>
         </section>
     );
 }
