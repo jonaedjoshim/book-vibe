@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import BookActions from "@/components/books/BookActions";
 import { notFound } from "next/navigation";
 import { books, getBookById } from "@/data/books";
 
@@ -109,21 +110,7 @@ export default async function BookDetailsPage({
                     <dd className="font-semibold text-[#131313]">{book.rating}</dd>
                 </dl>
 
-                <div className="mt-8 flex flex-wrap gap-4">
-                    <button
-                        type="button"
-                        className="btn border border-black/20 bg-white px-7 text-[#131313] shadow-none hover:bg-[#F3F3F3]"
-                    >
-                        Read
-                    </button>
-
-                    <button
-                        type="button"
-                        className="btn border-none bg-[#59C6D2] px-7 text-white shadow-none hover:bg-[#4db5c0]"
-                    >
-                        Wishlist
-                    </button>
-                </div>
+                <BookActions book={book} />
             </div>
         </section>
     );
