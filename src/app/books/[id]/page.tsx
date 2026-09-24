@@ -45,14 +45,14 @@ export default async function BookDetailsPage({
 
     return (
         <section className="grid gap-10 py-10 lg:grid-cols-2 lg:gap-16">
-            <div className="flex min-h-[500px] items-center justify-center rounded-2xl bg-[#F3F3F3] p-10 sm:min-h-[600px]">
+            <div className="flex min-h-125 items-center justify-center rounded-2xl bg-[#F3F3F3] p-10 sm:min-h-150">
                 <Image
                     src={book.image}
                     alt={`Cover of ${book.bookName}`}
                     width={400}
                     height={560}
                     priority
-                    className="max-h-[500px] w-auto object-contain"
+                    className="max-h-125 w-auto object-contain"
                 />
             </div>
 
