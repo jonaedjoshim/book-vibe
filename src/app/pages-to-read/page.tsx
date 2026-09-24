@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PagesToReadChart from "@/components/books/PagesToReadChart";
 
 export const metadata: Metadata = {
     title: "Pages to Read",
@@ -6,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function PagesToReadPage() {
     return (
-        <section className="py-10">
-            <h1 className="text-3xl font-bold">Pages to Read</h1>
+        <section className="pb-16 pt-4">
+            <PagesToReadChart />
         </section>
     );
 }
